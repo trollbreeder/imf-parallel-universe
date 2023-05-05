@@ -1,0 +1,2738 @@
+{
+	"ruleset": "Parallel Universe v0.1",
+	"hammers_per_turn": 3,
+	"ant_limit": 3,
+	"deck_size_min": 15,
+	"max_commons_main": 3,
+	"max_commons_side": 12,
+	"num_candles": 3,
+	"variable_attack_nerf": true,
+	"allow_snuffing_candles": true,
+	"opt_actives": false,
+	"enable_backrow": true,
+	"portrait": "portraits/Amoeba",
+	"description": "Woah everything's different!!\nA clean-room reimagining\nof every card by Trollbreeder\n(with strange balancing, i'm sorry\nit's gonna be like that)",
+	"cards": [{
+			"name": "Starvation",
+			"sigils": [
+				"Great Mox",
+				"Battery Bearer"
+			],
+			"attack": 1,
+			"health": 1,
+			"banned": true,
+			"rare": true,
+			"description": "Ported from Act 1. Act 2 sprite by syntaxevasion."
+		},
+		{
+			"name": "Greater Smoke",
+			"sigils": [
+				"Great Mox",
+				"Battery Bearer"
+			],
+			"attack": 0,
+			"health": 1,
+			"banned": true,
+			"rare": true,
+			"description": "Ported from Act 1. Act 2 sprite by syntaxevasion."
+		},
+		{
+			"name": "Adder",
+			"sigils": [
+				"Corpse Eater",
+				"Detonator"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 4,
+			"description": "Instant explosion, just add Dire Wolf!"
+		},
+		{
+			"name": "Bat",
+			"sigils": [
+				"Blood Lust"
+			],
+			"attack": 2,
+			"health": 1,
+			"blood_cost": 1,
+			"description": "Vampiric!"
+		},
+		{
+			"name": "Beaver",
+			"sigils": [
+				"Dam Builder"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 4,
+			"energy_cost": 1,
+			"rare": true,
+			"description": "Dams are attack conduits."
+		},
+		{
+			"name": "Dam",
+			"attack": 0,
+			"health": 3,
+			"bone_cost": 4,
+			"nosac": true,
+			"conduit": true,
+			"sigils": [
+				"Attack Conduit"
+			],
+			"blood_cost": 1,
+			"description": "Bloody, bony attack conduit"
+		},
+		{
+			"name": "Bee",
+			"attack": 3,
+			"health": 1,
+			"banned": true,
+			"blood_cost": 2,
+			"description": "Killer Bees.",
+			"sigils": [
+				"Airborne"
+			]
+		},
+		{
+			"name": "Beehive",
+			"sigils": [
+				"Frozen Away"
+			],
+			"attack": 0,
+			"health": 2,
+			"blood_cost": 1,
+			"description": "Hit me and get a free bee. Like a bait bucket.",
+			"evolution": "Bee"
+		},
+		{
+			"name": "Black Goat",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Bone King",
+				"Bone King"
+			],
+			"blood_cost": 1,
+			"rare": true,
+			"description": "Mmm, full of bones."
+		},
+		{
+			"name": "Bloodhound",
+			"sigils": [
+				"Burrower",
+				"Touch of Death"
+			],
+			"attack": 1,
+			"health": 4,
+			"blood_cost": 1,
+			"rare": true,
+			"description": "All who wrong you will be destroyed."
+		},
+		{
+			"name": "Bullfrog",
+			"sigils": [
+				"Guardian",
+				"Brittle"
+			],
+			"attack": 1,
+			"health": 1,
+			"blood_cost": 1,
+			"rare": true,
+			"atkspecial": "mirror",
+			"description": "Bonehound if bonehound was actually a skeleton"
+		},
+		{
+			"name": "Cat",
+			"sigils": [
+				"Unkillable",
+				"Frozen Away"
+			],
+			"attack": 0,
+			"health": 1,
+			"rare": true,
+			"bone_cost": 3,
+			"nohammer": true,
+			"description": "Child 13 but weirder",
+			"evolution": "Undead Cat"
+		},
+		{
+			"name": "Undead Cat",
+			"attack": 1,
+			"health": 1,
+			"banned": true,
+			"bone_cost": 1,
+			"nosac": true,
+			"sigils": [
+				"Boneless"
+			],
+			"description": "The product of killing a cat"
+		},
+		{
+			"name": "Cockroach",
+			"attack": 0,
+			"health": 2,
+			"sigils": [
+				"Unkillable"
+			],
+			"description": "Free chump blocker!",
+			"nosac": true
+		},
+		{
+			"name": "Corpse Maggots",
+			"sigils": [
+				"Stinky",
+				"Corpse Eater"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 5,
+			"description": "Gives you more time and blood to counter an attack."
+		},
+		{
+			"name": "The Daus",
+			"sigils": [
+				"Bellist"
+			],
+			"attack": 1,
+			"health": 2,
+			"blood_cost": 3,
+			"rare": true,
+			"description": "Who sent all these *babies* to fight me?"
+		},
+		{
+			"name": "Chime",
+			"attack": 0,
+			"health": 1,
+			"blood_cost": 1,
+			"banned": true,
+			"description": "Baby daus",
+			"sigils": [
+				"Fledgling"
+			],
+			"evolution": "The Daus"
+		},
+		{
+			"name": "Dire Wolf Pup",
+			"attack": 0,
+			"health": 2,
+			"sigils": [
+				"Double Strike"
+			],
+			"blood_cost": 1,
+			"description": "The pup needs a parental figure to show how it's done."
+		},
+		{
+			"name": "Dire Wolf",
+			"attack": 1,
+			"health": 3,
+			"sigils": [
+				"Double Strike",
+				"Leader"
+			],
+			"blood_cost": 2,
+			"description": "Fight me and my pups. See how you like it."
+		},
+		{
+			"name": "Elk",
+			"sigils": [
+				"Sprinter",
+				"Sentry"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 4,
+			"description": "Moving into view activates sentry"
+		},
+		{
+			"name": "Elk Fawn",
+			"sigils": [
+				"Sprinter"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 2,
+			"description": "49er swap"
+		},
+		{
+			"name": "Field Mice",
+			"sigils": [
+				"Handy"
+			],
+			"attack": 0,
+			"health": 1,
+			"blood_cost": 1,
+			"description": "Screw this hand."
+		},
+		{
+			"name": "Spore Mice",
+			"attack": 0,
+			"health": 1,
+			"blood_cost": 1,
+			"rare": true,
+			"sigils": [
+				"Handy",
+				"Reconstitute"
+			],
+			"description": "Keep screwing this hand."
+		},
+		{
+			"name": "Hawk",
+			"sigils": [
+				"Bifurcated Strike",
+				"Sentry"
+			],
+			"attack": 1,
+			"health": 2,
+			"blood_cost": 1,
+			"bone_cost": 2,
+			"rare": true,
+			"description": "VERY territorial"
+		},
+		{
+			"name": "Hrokkall",
+			"sigils": [
+				"Touch of Death",
+				"Waterborne"
+			],
+			"attack": 0,
+			"health": 1,
+			"rare": true,
+			"blood_cost": 2,
+			"bone_cost": 4,
+			"description": "Shy but deadly with the right encouragement."
+		},
+		{
+			"name": "Rat King",
+			"sigils": [
+				"Double Strike",
+				"Bone King"
+			],
+			"attack": 1,
+			"health": 2,
+			"blood_cost": 1,
+			"bone_cost": 4,
+			"rare": true,
+			"description": "Walkers + Dire Wolf"
+		},
+		{
+			"name": "Raven Egg",
+			"sigils": [
+				"Armored"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 3,
+			"energy_cost": 2,
+			"description": "Damage tanker"
+		},
+		{
+			"name": "Kingfisher",
+			"sigils": [
+				"Airborne",
+				"Corpse Eater"
+			],
+			"attack": 1,
+			"health": 3,
+			"blood_cost": 1,
+			"energy_cost": 3,
+			"description": "Mine! Mine! Mine!"
+		},
+		{
+			"name": "Great Kraken",
+			"sigils": [
+				"Omni Strike"
+			],
+			"attack": 1,
+			"health": 6,
+			"description": "Oh boy.",
+			"blood_cost": 2,
+			"bone_cost": 4
+		},
+		{
+			"name": "Long Elk",
+			"attack": 0,
+			"health": 3,
+			"sheds": "Vertebrae",
+			"rare": true,
+			"blood_cost": 1,
+			"bone_cost": 3,
+			"description": "I'm useless but my vertebrae sure aren't"
+		},
+		{
+			"name": "Vertebrae",
+			"attack": 1,
+			"health": 2,
+			"banned": true,
+			"description": "Sharp spine of Long Elk!",
+			"sigils": [
+				"Sharp Quills"
+			]
+		},
+		{
+			"name": "Alpha",
+			"attack": 1,
+			"health": 3,
+			"sigils": [
+				"Attack Conduit"
+			],
+			"blood_cost": 2,
+			"conduit": true,
+			"description": "like a Dam but more blood costy and can self defense"
+		},
+		{
+			"name": "Magpie",
+			"sigils": [
+				"Vessel Printer",
+				"Side Hustle"
+			],
+			"attack": 2,
+			"health": 3,
+			"description": "New Super Vessel Printer U Deluxe",
+			"blood_cost": 2,
+			"bone_cost": 4
+		},
+		{
+			"name": "Mantis",
+			"sigils": [
+				"Energy Gun"
+			],
+			"attack": 0,
+			"health": 1,
+			"blood_cost": 1,
+			"description": "Mantis Jimmy",
+			"active": true
+		},
+		{
+			"name": "Mantis God",
+			"sigils": [
+				"Energy Gun",
+				"Thick"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"blood_cost": 2,
+			"description": "Jimmy ate too much plasma",
+			"left_half": "Mantis",
+			"right_half": "God",
+			"active": true
+		},
+		{
+			"name": "God",
+			"sigils": [
+				"Energy Gun"
+			],
+			"attack": 0,
+			"health": 2,
+			"blood_cost": 1,
+			"description": "Mantis Jimmy 2",
+			"banned": true,
+			"active": true
+		},
+
+		{
+			"name": "Mole",
+			"sigils": [
+				"Corpse Eater"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 8,
+			"description": "Very cheap automatic chump blocker"
+		},
+		{
+			"name": "Mole Man",
+			"sigils": [
+				"Corpse Eater",
+				"Sentry"
+			],
+			"attack": 0,
+			"health": 6,
+			"rare": true,
+			"bone_cost": 8,
+			"description": "Better automatic chump blocker"
+		},
+		{
+			"name": "Moose Buck",
+			"attack": 1,
+			"health": 1,
+			"sigils": [
+				"Trifurcated Strike",
+				"Hefty"
+			],
+			"description": "Rampager that can easily be stopped",
+			"bone_cost": 8,
+			"rare": true
+		},
+		{
+			"name": "Opossum",
+			"attack": 0,
+			"health": 1
+		},
+		{
+			"name": "Ouroboros",
+			"sigils": [
+				"Hoarder",
+				"Reconstitute"
+			],
+			"attack": 1,
+			"health": 1,
+			"rare": true,
+			"description": "Magpieborous",
+			"blood_cost": 2,
+			"energy_cost": 2
+		},
+		{
+			"name": "Rabbit",
+			"attack": 0,
+			"health": 1,
+			"description": "Run! Run rabbit run!",
+			"sigils": [
+				"Sprinter"
+			],
+			"banned": true
+		},
+		{
+			"name": "Skunk",
+			"attack": 0,
+			"health": 2,
+			"sigils": [
+				"Repulsive"
+			],
+			"description": "Shuts down its lane.",
+			"blood_cost": 2
+		},
+		{
+			"name": "Coyote",
+			"attack": 1,
+			"health": 2,
+			"bone_cost": 4,
+			"description": "Gravedigger with some self defense",
+			"sigils": [
+				"Bone Digger"
+			]
+		},
+		{
+			"name": "Great White",
+			"attack": 1,
+			"health": 3,
+			"sigils": [
+				"Waterborne",
+				"Dam Builder"
+			],
+			"description": "Super Beaver",
+			"blood_cost": 2,
+			"bone_cost": 5,
+			"conduit": true
+		},
+		{
+			"name": "Grizzly",
+			"attack": 4,
+			"health": 1,
+			"blood_cost": 1,
+			"energy_cost": 2,
+			"rare": true,
+			"description": "Quick and dirty damage... once.",
+			"sigils": [
+				"Brittle",
+				"Mighty Leap"
+			]
+		},
+		{
+			"name": "Porcupine",
+			"attack": 0,
+			"health": 6,
+			"sigils": [
+				"Sharp Quills",
+				"Burrower"
+			],
+			"description": "Oof ouch my hide",
+			"bone_cost": 2,
+			"energy_cost": 3
+		},
+		{
+			"name": "Pronghorn",
+			"attack": 0,
+			"health": 3,
+			"sigils": [
+				"Guardian",
+				"Burrower"
+			],
+			"description": "This mirror keeps mirroring as long as it can.",
+			"blood_cost": 2,
+			"atkspecial": "mirror"
+		},
+		{
+			"name": "Rattler",
+			"attack": 1,
+			"health": 1,
+			"description": "Ported from Act 1. Act 2 sprite by syntaxevasion. Explodebot util without the explosions.",
+			"energy_cost": 3,
+			"sigils": [
+				"Touch of Death",
+				"Brittle"
+			]
+		},
+		{
+			"name": "Raven",
+			"sigils": [
+				"Armored",
+				"Thick"
+			],
+			"attack": 0,
+			"health": 1,
+			"energy_cost": 3,
+			"description": "BIG damage tanker",
+			"bone_cost": 3,
+			"left_half": "Raven 1",
+			"right_half": "Raven 2"
+		},
+		{
+			"name": "Raven 1",
+			"sigils": [
+				"Armored"
+			],
+			"attack": 0,
+			"health": 1,
+			"energy_cost": 3,
+			"description": "BIG damage tanker",
+			"bone_cost": 3,
+			"banned": true
+		},
+		{
+			"name": "Raven 2",
+			"sigils": [
+				"Armored"
+			],
+			"attack": 0,
+			"health": 1,
+			"energy_cost": 3,
+			"description": "BIG damage tanker",
+			"bone_cost": 3,
+			"banned": true
+		},
+		{
+			"name": "Salmon",
+			"sigils": [
+				"Waterborne",
+				"Sprinter"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 2,
+			"mox_cost": [
+				"Blue"
+			],
+			"description": "It keeps panicking, despite magic letting it live."
+		},
+		{
+			"name": "River Snapper",
+			"attack": 1,
+			"health": 6,
+			"description": "Ported from Act 1. Act 2 sprite by syntaxevasion. Protective magic mantis.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Green"
+			],
+			"sigils": [
+				"Bifurcated Strike"
+			]
+		},
+		{
+			"name": "Sparrow",
+			"attack": 3,
+			"health": 1,
+			"sigils": [
+				"Airborne",
+				"Thick"
+			],
+			"description": "According to all known laws of aviation, there is no way a sparrow should be able to fly. Its wings are too small to get its fat little body off the ground. The sparrow, of course, flies anyway because birds don't care what humans think is impossible.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"left_half": "Sparrow 1",
+			"right_half": "Sparrow 2"
+		},
+		{
+			"name": "Sparrow 1",
+			"attack": 1,
+			"health": 1,
+			"sigils": [
+				"Airborne"
+			],
+			"description": "According to all known laws of aviation, there is no way a sparrow should be able to fly. Its wings are too small to get its fat little body off the ground. The sparrow, of course, flies anyway because birds don't care what humans think is impossible.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"banned": true
+		},
+		{
+			"name": "Sparrow 2",
+			"attack": 2,
+			"health": 1,
+			"sigils": [
+				"Airborne"
+			],
+			"description": "According to all known laws of aviation, there is no way a sparrow should be able to fly. Its wings are too small to get its fat little body off the ground. The sparrow, of course, flies anyway because birds don't care what humans think is impossible.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"banned": true
+		},
+		{
+			"name": "Strange Larva",
+			"sigils": [
+				"Frozen Away"
+			],
+			"attack": 1,
+			"health": 1,
+			"description": "this is based on that Matryoshkabot idea i had",
+			"blood_cost": 1,
+			"nosac": true,
+			"nohammer": true,
+			"rare": true,
+			"evolution": "Strange Pupa"
+		},
+		{
+			"name": "Strange Pupa",
+			"sigils": [
+				"Frozen Away",
+				"Brittle"
+			],
+			"attack": 3,
+			"health": 1,
+			"blood_cost": 2,
+			"nosac": true,
+			"nohammer": true,
+			"description": "this is based on that Matryoshkabot idea i had",
+			"rare": true,
+			"evolution": "Mothman"
+		},
+		{
+			"name": "Mothman",
+			"attack": 2,
+			"health": 4,
+			"blood_cost": 3,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "this is based on that Matryoshkabot idea i had",
+			"rare": true,
+			"sigils": [
+				"Mighty Leap"
+			]
+		},
+		{
+			"name": "Turkey Vulture",
+			"attack": 2,
+			"health": 1,
+			"sigils": [
+				"Corpse Eater",
+				"Reconstitute"
+			],
+			"bone_cost": 6,
+			"rare": true
+		},
+		{
+			"name": "Bell Tentacle",
+			"sigils": [
+				"Bellist"
+			],
+			"attack": 0,
+			"health": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"rare": true,
+			"description": "For whom the bells toll... enjoy Daus infestation."
+		},
+		{
+			"name": "Hand Tentacle",
+			"sigils": [
+				"Mental Gemnastics"
+			],
+			"attack": 0,
+			"health": 1,
+			"rare": true,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "Blue mage.",
+			"blood_cost": 1
+		},
+		{
+			"name": "Mirror Tentacle",
+			"sigils": [
+				"Hoarder"
+			],
+			"attack": 0,
+			"health": 1,
+			"mox_cost": [
+				"Blue"
+			],
+			"rare": true,
+			"blood_cost": 1,
+			"description": "Magpie."
+		},
+		{
+			"name": "Squirrel",
+			"attack": 0,
+			"health": 1,
+			"banned": true
+		},
+		{
+			"name": "Squirrel Ball",
+			"sigils": [
+				"Vessel Printer",
+				"Squirrel Shedder"
+			],
+			"attack": 0,
+			"health": 3,
+			"bone_cost": 3,
+			"banned": true,
+			"description": "Catch me if you can!"
+		},
+		{
+			"name": "Stoat",
+			"attack": 1,
+			"health": 2,
+			"description": "Total misplay.",
+			"energy_cost": 3,
+			"sigils": [
+				"Noble Sacrifice"
+			],
+			"banned": true
+		},
+		{
+			"name": "Urayuli",
+			"attack": 5,
+			"health": 1,
+			"rare": true,
+			"blood_cost": 3,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "FLYING URAYULI!!!",
+			"sigils": [
+				"Airborne"
+			]
+		},
+		{
+			"name": "Warren",
+			"sigils": [
+				"Bees Within"
+			],
+			"attack": 0,
+			"health": 2,
+			"blood_cost": 1,
+			"mox_cost": [
+				"Green"
+			],
+			"rare": true,
+			"description": "The rabbits within have all died already. Something else is inside..."
+		},
+		{
+			"name": "Wolf",
+			"attack": 0,
+			"health": 3,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "The wolf, a keeper of magic.",
+			"sigils": [
+				"Green Mox",
+				"Gem Guardian"
+			],
+			"blood_cost": 1,
+			"atkspecial": "green_mox"
+		},
+		{
+			"name": "Wolf Cub",
+			"sigils": [
+				"Gem Dependant",
+				"Green Mox"
+			],
+			"attack": 1,
+			"health": 1,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "The wolf's apprentice."
+		},
+		{
+			"name": "Fox",
+			"sigils": [
+				"Handy",
+				"Corpse Eater"
+			],
+			"attack": 1,
+			"health": 3,
+			"description": "The fox comes at the least opportune time, but you may come to appreciate it.",
+			"mox_cost": [
+				"Orange",
+				"Green",
+				"Blue"
+			]
+		},
+		{
+			"name": "Worker Ant",
+			"attack": 0,
+			"health": 2,
+			"energy_cost": 2,
+			"conduit": true,
+			"description": "A simple ant looking to benefit from the queen's grace and the electric grid."
+		},
+		{
+			"name": "Ant Queen",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Energy Conduit (+3)",
+				"Depleting"
+			],
+			"energy_cost": 4,
+			"conduit": true,
+			"rare": true,
+			"description": "The queen is happy to produce energy for us, as long as we keep the ants going."
+		},
+		{
+			"name": "Flying Ant",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Attack Conduit",
+				"Frozen Away"
+			],
+			"energy_cost": 3,
+			"conduit": true,
+			"description": "Flying ants provide the ants with firepower and supplies from afar.",
+			"evolution": "Worker Ant"
+		},
+		{
+			"name": "Bullet Ant",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Power Dice (2)",
+				"Depleting"
+			],
+			"energy_cost": 2,
+			"bone_cost": 3,
+			"conduit": true,
+			"description": "Ante up.",
+			"rare": true,
+			"active": true
+		},
+		{
+			"name": "Mole Seaman",
+			"attack": 0,
+			"health": 4,
+			"sigils": [
+				"Skeleton Crew (Yarr)",
+				"Sprinter"
+			],
+			"rare": true,
+			"bone_cost": 6,
+			"conduit": true,
+			"description": "Yarr! Me crew be the finest on all seas, and me Ship the fastest to sail ever yet."
+		},
+		{
+			"name": "Curve Hopper",
+			"attack": 1,
+			"health": 1,
+			"rare": true,
+			"energy_cost": 1,
+			"description": "Fast fast fast!! Hop around the curve!!",
+			"sigils": [
+				"Sprinter",
+				"Sprinter"
+			]
+		},
+		{
+			"name": "Automaton",
+			"attack": 1,
+			"health": 1,
+			"description": "The automatons around the facility are so easy to assemble, we have another one down the line 2 minutes after you break one.",
+			"energy_cost": 1,
+			"sigils": [
+				"Reconstitute"
+			]
+		},
+		{
+			"name": "Energy Bot",
+			"sigils": [
+				"Unkillable",
+				"Battery Bearer"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"banned": true,
+			"nosac": true,
+			"nohammer": true,
+			"description": "A reproducible model, but we only have the parts for just one..."
+		},
+		{
+			"name": "Bolthound",
+			"sigils": [
+				"Enlarge",
+				"Bone Digger"
+			],
+			"attack": 0,
+			"health": 2,
+			"description": "I MUST FEED ON THE SUSTENANCE OF BONES.",
+			"energy_cost": 3,
+			"active": true
+		},
+		{
+			"name": "Buff Conduit",
+			"sigils": [
+				"Attack Conduit"
+			],
+			"attack": 0,
+			"health": 2,
+			"mox_cost": [
+				"Green"
+			],
+			"conduit": true,
+			"description": "Power up!"
+		},
+		{
+			"name": "Busted 3D Printer",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Stimulate",
+				"Side Hustle"
+			],
+			"rare": true,
+			"conduit": true,
+			"active": true,
+			"description": "Must print more. Must attack more. Error."
+		},
+		{
+			"name": "Double Gunner",
+			"sigils": [
+				"Double Strike",
+				"Double Death"
+			],
+			"attack": 2,
+			"health": 1,
+			"conduit": true,
+			"description": "Double down.",
+			"bone_cost": 3,
+			"energy_cost": 5
+		},
+		{
+			"name": "Energy Conduit",
+			"sigils": [
+				"Energy Conduit (+3)"
+			],
+			"attack": 0,
+			"health": 1,
+			"conduit": true,
+			"rare": true,
+			"description": "It's connected to the mains.",
+			"energy_cost": 2,
+			"mox_cost": [
+				"Blue"
+			]
+		},
+		{
+			"name": "Explode Bot",
+			"sigils": [
+				"Detonator (5)",
+				"Reconstitute"
+			],
+			"attack": 0,
+			"health": 1,
+			"nosac": true,
+			"energy_cost": 2,
+			"rare": true,
+			"description": "It always comes back to explode some more."
+		},
+		{
+			"name": "Factory Conduit",
+			"sigils": [
+				"Energy Conduit (+3)"
+			],
+			"attack": 0,
+			"health": 3,
+			"conduit": true,
+			"bone_cost": 3,
+			"energy_cost": 2,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "L33pbots are powerful mantis conduits basically"
+		},
+		{
+			"name": "Gamblobot",
+			"sigils": [
+				"Handy"
+			],
+			"attack": 0,
+			"health": 1,
+			"description": "Gamble on your future, discard your hand today!",
+			"energy_cost": 2
+		},
+		{
+			"name": "GR1ZZ",
+			"sigils": [
+				"Frozen Away"
+			],
+			"attack": 3,
+			"health": 1,
+			"energy_cost": 3,
+			"mox_cost": [
+				"Green"
+			],
+			"conduit": true,
+			"description": "Discount swapbot",
+			"nosac": true,
+			"evolution": "GR1ZZ (beast)"
+		},
+		{
+			"name": "GR1ZZ (beast)",
+			"attack": 1,
+			"health": 3,
+			"energy_cost": 3,
+			"mox_cost": [
+				"Orange"
+			],
+			"conduit": true,
+			"description": "Discount swapbot"
+		},
+		{
+			"name": "Insectodrone",
+			"attack": 1,
+			"health": 1,
+			"energy_cost": 2,
+			"mox_cost": [
+				"Orange"
+			],
+			"conduit": true,
+			"atkspecial": "mox",
+			"description": "Insectodrones sustain on mox from crystals, which they make into what's essentially monster energy drink gatorade lemonade chocolate honey. With artifictial peanut flavor."
+		},
+		{
+			"name": "Junkbot",
+			"attack": 2,
+			"health": 3,
+			"bone_cost": 2,
+			"energy_cost": 1,
+			"rare": true,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "Slap-dash contraption of random parts. Somehow it works.",
+			"sigils": [
+				"Fecundity",
+				"Brittle"
+			]
+		},
+		{
+			"name": "L33pB0t",
+			"sigils": [
+				"Boneless",
+				"Bifurcated Strike"
+			],
+			"attack": 1,
+			"health": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"banned": true,
+			"description": "We are legion. We are l33pbotkind.",
+			"conduit": true
+		},
+		{
+			"name": "M3atB0t",
+			"sigils": [
+				"Bone King",
+				"Ruby Heart"
+			],
+			"attack": 0,
+			"health": 2,
+			"energy_cost": 2,
+			"banned": true,
+			"description": "More like bonebot, am i right?"
+		},
+		{
+			"name": "49er",
+			"sigils": [
+				"Sprinter"
+			],
+			"attack": 2,
+			"health": 4,
+			"energy_cost": 4,
+			"banned": true,
+			"description": "Elk swap"
+		},
+		{
+			"name": "No Moon",
+			"sigils": [
+				"Omni Strike",
+				"Made of Stone"
+			],
+			"attack": 1,
+			"health": 12,
+			"rare": true,
+			"description": "Uh oh.",
+			"blood_cost": 1,
+			"bone_cost": 4,
+			"energy_cost": 6,
+			"mox_cost": [
+				"Blue"
+			]
+		},
+		{
+			"name": "Null Conduit",
+			"attack": 0,
+			"health": 3,
+			"conduit": true,
+			"energy_cost": 1,
+			"description": "Makes for a good wall, but you have better conduits elsewhere."
+		},
+		{
+			"name": "Plasma Jimmy",
+			"attack": 1,
+			"health": 1,
+			"active": true,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "Pull back and let go! See the amazing results!",
+			"sigils": [
+				"Stimulate",
+				"Brittle"
+			]
+		},
+		{
+			"name": "Rustbucket",
+			"attack": 1,
+			"health": 3,
+			"description": "It barely works. Parts are already snapping in half.",
+			"bone_cost": 2,
+			"conduit": true,
+			"sigils": [
+				"Fecundity (Kaycee)",
+				"Brittle"
+			]
+		},
+		{
+			"name": "Scrap Golem",
+			"sigils": [
+				"Blue Mox",
+				"Ruby Heart"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 3,
+			"energy_cost": 2,
+			"description": "Reanimated from mechanical parts, not clay as is traditionally prescribed by Magnificus."
+		},
+		{
+			"name": "Steel Mice",
+			"sigils": [
+				"Hoarder",
+				"Corpse Eater"
+			],
+			"attack": 1,
+			"health": 1,
+			"description": "Click and buy!! Buy now! Click on our advertising!! Buy NOW dont miss this!",
+			"energy_cost": 6
+		},
+		{
+			"name": "Sentry Drone",
+			"sigils": [
+				"Guardian"
+			],
+			"attack": 1,
+			"health": 1,
+			"description": "Get off the premises.",
+			"mox_cost": [
+				"Green"
+			],
+			"energy_cost": 1
+		},
+		{
+			"name": "Sentry Spore",
+			"sigils": [
+				"Guardian",
+				"Sentry"
+			],
+			"attack": 1,
+			"health": 2,
+			"energy_cost": 2,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "No loitering... not at all!"
+		},
+		{
+			"name": "QU177",
+			"sigils": [
+				"Green Mox",
+				"Transformer"
+			],
+			"attack": 1,
+			"health": 1,
+			"energy_cost": 1,
+			"description": "Untrue to appearance, it is actually a genius and a scholar in energy magicks."
+		},
+		{
+			"name": "QU177 (beast)",
+			"sigils": [
+				"Orange Mox",
+				"Transformer"
+			],
+			"attack": 1,
+			"health": 1,
+			"energy_cost": 1,
+			"description": "Untrue to appearance, it is actually a genius and a scholar in energy magicks."
+		},
+		{
+			"name": "SON1A",
+			"sigils": [
+				"Bifurcated Strike",
+				"Fledgling"
+			],
+			"attack": 1,
+			"health": 1,
+			"energy_cost": 3,
+			"description": "Powercreep.",
+			"evolution": "SON1A (beast)"
+		},
+		{
+			"name": "SON1A (beast)",
+			"sigils": [
+				"Trifurcated Strike"
+			],
+			"attack": 1,
+			"health": 2,
+			"energy_cost": 3,
+			"description": "Powercreep god.",
+			"mox_cost": [
+				"Orange"
+			],
+			"banned": true
+		},
+		{
+			"name": "Mrs. Bomb",
+			"sigils": [
+				"Detonator",
+				"Detonator"
+			],
+			"attack": 2,
+			"health": 1,
+			"rare": true,
+			"energy_cost": 4,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "Explode already."
+		},
+		{
+			"name": "Shutterbug",
+			"sigils": [
+				"Fecundity",
+				"Touch of Death"
+			],
+			"attack": 1,
+			"health": 1,
+			"rare": true,
+			"description": "That's going in my cringe collection.",
+			"energy_cost": 4,
+			"mox_cost": [
+				"Green"
+			]
+		},
+		{
+			"name": "Sniper Bot",
+			"attack": 1,
+			"health": 1,
+			"energy_cost": 2,
+			"description": "Just aim... aim and fire...",
+			"sigils": [
+				"Scopophobic",
+				"Airborne"
+			],
+			"banned": true
+		},
+		{
+			"name": "Steambot",
+			"attack": 1,
+			"health": 3,
+			"description": "The ultimate wall.",
+			"energy_cost": 6,
+			"mox_cost": [
+				"Orange"
+			],
+			"sigils": [
+				"Armored",
+				"Ruby Heart"
+			]
+		},
+		{
+			"name": "Mox Module",
+			"sigils": [
+				"Great Mox",
+				"Gem Dependant"
+			],
+			"attack": 1,
+			"health": 3,
+			"rare": true,
+			"energy_cost": 6,
+			"nosac": true,
+			"description": "It needs a kick to get going, but then it's all-right forever."
+		},
+		{
+			"name": "Mirror Bot",
+			"atkspecial": "mirror",
+			"attack": 0,
+			"health": 3,
+			"energy_cost": 2,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "Who is that?",
+			"sigils": [
+				"Blue Mox"
+			]
+		},
+		{
+			"name": "Thick Droid",
+			"attack": 0,
+			"health": 4,
+			"description": "Provides green and orange mox in one big package.",
+			"sigils": [
+				"Thick"
+			],
+			"left_half": "Thick",
+			"right_half": "Droid",
+			"energy_cost": 3
+		},
+		{
+			"name": "Thick",
+			"attack": 0,
+			"health": 4,
+			"banned": true,
+			"sigils": [
+				"Green Mox"
+			],
+			"mox_cost": [
+				"Orange"
+			]
+		},
+		{
+			"name": "Droid",
+			"attack": 0,
+			"health": 4,
+			"banned": true,
+			"mox_cost": [
+				"Green"
+			],
+			"sigils": [
+				"Orange Mox"
+			]
+		},
+		{
+			"name": "Jukebot",
+			"attack": 0,
+			"health": 3,
+			"sigils": [
+				"Attack Conduit",
+				"Attack Conduit"
+			],
+			"description": "Inspiring tunes for your robot army. If only you had enough electricity to power it though.",
+			"energy_cost": 3,
+			"banned": true
+		},
+		{
+			"name": "Draugr",
+			"sigils": [
+				"Frozen Away",
+				"Unkillable"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 1,
+			"banned": true,
+			"description": "There's a skeleton inside... just like in YOU!!",
+			"evolution": "Skeleton"
+		},
+		{
+			"name": "Banshee",
+			"sigils": [
+				"Stinky",
+				"Airborne"
+			],
+			"attack": 1,
+			"health": 1,
+			"bone_cost": 4,
+			"banned": true,
+			"description": "AAAAAAAAAAA"
+		},
+		{
+			"name": "Bonehound",
+			"sigils": [
+				"Guardian",
+				"Brittle"
+			],
+			"attack": 0,
+			"health": 1,
+			"atkspecial": "mirror",
+			"description": "If bonehound was actually a skeleton",
+			"bone_cost": 6
+		},
+		{
+			"name": "Bone Lord's Horn",
+			"sigils": [
+				"Orange Mox",
+				"Bone Digger"
+			],
+			"attack": 0,
+			"health": 1,
+			"description": "Mysterious magicks flicker about as sparks while it produces more undead material.",
+			"energy_cost": 3
+		},
+		{
+			"name": "Bone Heap",
+			"sigils": [
+				"Bone King",
+				"Bone King"
+			],
+			"attack": 4,
+			"health": 2,
+			"bone_cost": 9,
+			"description": "Poor thing.",
+			"rare": true
+		},
+		{
+			"name": "Broken Obol 1",
+			"sigils": [
+				"Unkillable"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 2,
+			"rare": true,
+			"conduit": true,
+			"description": "This obol has cut wiring inside..."
+		},
+		{
+			"name": "Broken Obol 2",
+			"sigils": [
+				"Unkillable"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 2,
+			"rare": true,
+			"conduit": true,
+			"description": "That obol has cut wiring inside..."
+		},
+		{
+			"name": "Dead Hand",
+			"sigils": [
+				"Omni Strike",
+				"Brittle"
+			],
+			"attack": 3,
+			"health": 1,
+			"description": "Get out of bad situation free card",
+			"rare": true,
+			"bone_cost": 8,
+			"energy_cost": 3
+		},
+		{
+			"name": "Pharaoh's Pets",
+			"sigils": [
+				"Reconstitute",
+				"Worthy Sacrifice"
+			],
+			"attack": 0,
+			"health": 1,
+			"rare": true,
+			"description": "They can't get enough of sacrifice. They will do anything for the Pharaoh.",
+			"blood_cost": 1,
+			"bone_cost": 4
+		},
+		{
+			"name": "Drowned Soul",
+			"sigils": [
+				"Waterborne",
+				"Disentomb (Corpses)"
+			],
+			"attack": 0,
+			"health": 2,
+			"rare": true,
+			"mox_cost": [
+				"Green"
+			],
+			"description": "There were many of us. Hear our gargles. Hear our struggles.",
+			"active": true
+		},
+		{
+			"name": "The Walkers",
+			"sigils": [
+				"Bone King",
+				"Omni Strike"
+			],
+			"attack": 0,
+			"health": 1,
+			"bone_cost": 4,
+			"mox_cost": [
+				"Orange"
+			],
+			"rare": true,
+			"description": "None of them are used to fighting. They need encouragement."
+		},
+		{
+			"name": "Frank & Stein",
+			"attack": 2,
+			"health": 2,
+			"bone_cost": 4,
+			"rare": true,
+			"description": "\"Two into one! Two into one!\" the mycologists cried in unison. The experiment was a success. It was...",
+			"sigils": [
+				"Thick"
+			],
+			"energy_cost": 2,
+			"left_half": "Frank",
+			"right_half": "Stein"
+		},
+		{
+			"name": "Frank",
+			"attack": 2,
+			"health": 1,
+			"description": "I shall kill as I desire.",
+			"banned": true,
+			"rare": true,
+			"bone_cost": 4
+		},
+		{
+			"name": "Stein",
+			"attack": 0,
+			"health": 3,
+			"description": "I shall help out as I desire.",
+			"banned": true,
+			"rare": true,
+			"sigils": [
+				"Leader"
+			],
+			"bone_cost": 2
+		},
+		{
+			"name": "Ghost Ship",
+			"sigils": [
+				"Disentomb",
+				"Brittle"
+			],
+			"attack": 1,
+			"health": 1,
+			"energy_cost": 2,
+			"mox_cost": [
+				"Blue"
+			],
+			"rare": true,
+			"description": "HEAR YE HEAR YE! We're going 6 feet under soon! Visit Davy Jones' before our skulls dry up on shore!",
+			"active": true
+		},
+		{
+			"name": "Gravedigger",
+			"sigils": [
+				"Unkillable",
+				"Burrower"
+			],
+			"attack": 0,
+			"health": 1,
+			"energy_cost": 1,
+			"description": "Dig your own grave."
+		},
+		{
+			"name": "Sporedigger",
+			"sigils": [
+				"Burrower",
+				"Bone King",
+				"Reconstitute"
+			],
+			"attack": 0,
+			"health": 1,
+			"energy_cost": 3,
+			"rare": true,
+			"description": "Dig your own super special grave.",
+			"bone_cost": 1
+		},
+		{
+			"name": "Headless Horseman",
+			"sigils": [
+				"Bifurcated Strike",
+				"Trifurcated Strike"
+			],
+			"attack": 1,
+			"health": 2,
+			"rare": true,
+			"bone_cost": 8,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "He had a head after all."
+		},
+		{
+			"name": "Mummy Lord",
+			"attack": 1,
+			"health": 4,
+			"bone_cost": 3,
+			"description": "HOLY %@?%! THAT'S WHAT A MUMMY LORD LOOKS LIKE?!",
+			"sigils": [
+				"Blood Lust"
+			]
+		},
+		{
+			"name": "Necromancer",
+			"sigils": [
+				"Disentomb"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"description": "I shall raise the dead as spooky skeletons! And no one will stop me!!",
+			"bone_cost": 5,
+			"mox_cost": [
+				"Blue"
+			],
+			"active": true
+		},
+		{
+			"name": "Revenant",
+			"sigils": [
+				"Brittle",
+				"Bifurcated Strike"
+			],
+			"attack": 1,
+			"health": 2,
+			"bone_cost": 1,
+			"energy_cost": 2,
+			"rare": true,
+			"description": "Atleast this one doesn't have missile launchers."
+		},
+		{
+			"name": "Sarcophagus",
+			"attack": 0,
+			"health": 6,
+			"bone_cost": 3,
+			"rare": true,
+			"description": "There's nothing inside."
+		},
+		{
+			"name": "Skeleton",
+			"attack": 1,
+			"health": 1,
+			"description": "Very spoopy.",
+			"sigils": [
+				"Brittle"
+			]
+		},
+		{
+			"name": "Skelemagus",
+			"sigils": [
+				"Brittle"
+			],
+			"attack": 2,
+			"health": 1,
+			"bone_cost": 4,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "And what do you know about spells? I'm a 400-year-old sorcerer!"
+		},
+		{
+			"name": "Tomb Robber",
+			"sigils": [
+				"Bone Digger",
+				"Bone Digger"
+			],
+			"attack": 0,
+			"health": 3,
+			"description": "They always shunt me off to the B-list. I'll never be as cool as the Tomb Raider.",
+			"bone_cost": 2
+		},
+		{
+			"name": "Zombie",
+			"attack": 2,
+			"health": 1,
+			"sigils": [
+				"Brittle"
+			],
+			"energy_cost": 1,
+			"description": "Brains!"
+		},
+		{
+			"name": "Floating Eye",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Sentry"
+			],
+			"description": "I see ya mate. I see ya!!",
+			"bone_cost": 2
+		},
+		{
+			"name": "Gargoyle",
+			"attack": 1,
+			"health": 2,
+			"sigils": [
+				"Fecundity"
+			],
+			"description": "hee hee. i love making you suffer for ridiculously long amounts of time",
+			"blood_cost": 1,
+			"bone_cost": 4
+		},
+		{
+			"name": "Skeleton Crew",
+			"attack": 1,
+			"health": 1,
+			"sigils": [
+				"Brittle",
+				"Vessel Printer"
+			],
+			"bone_cost": 1,
+			"description": "Yar har har! Yo ho ho!",
+			"energy_cost": 1
+		},
+		{
+			"name": "Zombie Parrot",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Vessel Printer"
+			],
+			"bone_cost": 1,
+			"description": "SKREEET! YAR HAR! YO HO!"
+		},
+		{
+			"name": "Gourmage",
+			"sigils": [
+				"Blood Lust",
+				"Corpse Eater"
+			],
+			"attack": 2,
+			"health": 1,
+			"mox_cost": [
+				"Orange",
+				"Green"
+			],
+			"description": "Mmm. Tasty. I love the smell of iron in the morning."
+		},
+		{
+			"name": "Blue Mage",
+			"sigils": [
+				"Blue Mox",
+				"Gem Guardian"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"mox_cost": [
+				"Blue"
+			],
+			"description": "Protector of all. Protector of our source."
+		},
+		{
+			"name": "Blue Sporemage",
+			"sigils": [
+				"Gem Detonator (5)",
+				"Gem Guardian"
+			],
+			"attack": 0,
+			"health": 5,
+			"energy_cost": 2,
+			"mox_cost": [
+				"Blue"
+			],
+			"rare": true,
+			"description": "Too protective..."
+		},
+		{
+			"name": "Hover Mage",
+			"sigils": [
+				"Ant Spawner",
+				"Airborne"
+			],
+			"attack": 1,
+			"health": 1,
+			"mox_cost": [
+				"Blue"
+			],
+			"description": "This mage likes hovering just as much as they like ants. Ants are so cool! Have you seen their eusocial structure? I once... blablabla... blabla..."
+		},
+		{
+			"name": "Force Mage",
+			"sigils": [
+				"Hefty",
+				"Mighty Leap"
+			],
+			"attack": 0,
+			"health": 4,
+			"description": "Knock off, mate! I'm ov here workin 24 and you just sit there doing WHAT exactly. Giddoot, giddey go!",
+			"mox_cost": [
+				"Blue"
+			]
+		},
+		{
+			"name": "Gem Detonator",
+			"sigils": [
+				"Green Mox",
+				"Detonator (5)"
+			],
+			"attack": 0,
+			"health": 1,
+			"energy_cost": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "Sorry, I meant a gem that detonates. Not one who detonates gems."
+		},
+		{
+			"name": "Gem Fiend",
+			"sigils": [
+				"Great Mox",
+				"Gem Dependant",
+				"Depleting"
+			],
+			"attack": 1,
+			"health": 1,
+			"mox_cost": [
+				"Blue"
+			],
+			"rare": true,
+			"description": "I like gems just as much as the next mage, but man, I... really like gems."
+		},
+		{
+			"name": "Gem Guardian",
+			"sigils": [
+				"Armored",
+				"Gem Animator"
+			],
+			"attack": 2,
+			"health": 4,
+			"blood_cost": 1,
+			"mox_cost": [
+				"Green"
+			],
+			"rare": true,
+			"description": "They shall escape from certain doom, I'll be sure of it!"
+		},
+		{
+			"name": "Green Mage",
+			"attack": 1,
+			"health": 1,
+			"description": "Eey, i've goddy some side hustle here. Not liter, c'mon. Camonere. Wansome... bones??",
+			"energy_cost": 2,
+			"mox_cost": [
+				"Green"
+			],
+			"rare": true,
+			"sigils": [
+				"Bonehorn (1)"
+			],
+			"active": true
+		},
+		{
+			"name": "Junior Sage",
+			"attack": 1,
+			"health": 2,
+			"description": "I may make some mistakes, but 'tis part of learning. I'm certain of it.",
+			"sigils": [
+				"Fledgling"
+			],
+			"mox_cost": [
+				"Orange"
+			],
+			"evolution": "Orange Mage"
+		},
+		{
+			"name": "Mage Knight",
+			"sigils": [
+				"Gem Dependant",
+				"Detonator (5)"
+			],
+			"attack": 2,
+			"health": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "DIE FOR OUR MAGICKS! DIE FOR OUR KING! I SHALL TAKE YOU WITH!"
+		},
+		{
+			"name": "Master Bleene",
+			"sigils": [
+				"Attack Conduit",
+				"Battery Bearer"
+			],
+			"attack": 0,
+			"health": 4,
+			"rare": true,
+			"mox_cost": [
+				"Green",
+				"Blue"
+			],
+			"conduit": true,
+			"description": "I am one with power."
+		},
+		{
+			"name": "Master Goranj",
+			"sigils": [
+				"Hoarder",
+				"Hoarder"
+			],
+			"attack": 1,
+			"health": 2,
+			"rare": true,
+			"description": "I am one with cards.",
+			"mox_cost": [
+				"Orange",
+				"Green"
+			]
+		},
+		{
+			"name": "Master Orlu",
+			"sigils": [
+				"Brittle",
+				"Unkillable"
+			],
+			"attack": 3,
+			"health": 1,
+			"rare": true,
+			"description": "I am one with death.",
+			"mox_cost": [
+				"Orange",
+				"Blue"
+			]
+		},
+		{
+			"name": "Bleene's Mox",
+			"sigils": [
+				"Blue Mox",
+				"Green Mox"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"mox_cost": [
+				"Orange"
+			],
+			"banned": true,
+			"conduit": true
+		},
+		{
+			"name": "Goranj's Mox",
+			"sigils": [
+				"Orange Mox",
+				"Green Mox"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"mox_cost": [
+				"Blue"
+			],
+			"banned": true,
+			"conduit": true
+		},
+		{
+			"name": "Orlu's Mox",
+			"sigils": [
+				"Orange Mox",
+				"Blue Mox"
+			],
+			"attack": 0,
+			"health": 3,
+			"rare": true,
+			"mox_cost": [
+				"Green"
+			],
+			"banned": true,
+			"conduit": true
+		},
+		{
+			"name": "Emerald Mox",
+			"sigils": [
+				"Green Mox"
+			],
+			"attack": 0,
+			"health": 3,
+			"banned": true
+		},
+		{
+			"name": "Ruby Mox",
+			"sigils": [
+				"Orange Mox"
+			],
+			"attack": 0,
+			"health": 3,
+			"banned": true
+		},
+		{
+			"name": "Sapphire Mox",
+			"sigils": [
+				"Blue Mox"
+			],
+			"attack": 0,
+			"health": 3,
+			"banned": true
+		},
+		{
+			"name": "Magnus Mox",
+			"sigils": [
+				"Great Mox"
+			],
+			"attack": 0,
+			"health": 1,
+			"banned": true,
+			"rare": true
+		},
+		{
+			"name": "Muscle Mage",
+			"sigils": [],
+			"attack": 2,
+			"health": 2,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "KAPOW!"
+		},
+		{
+			"name": "Orange Mage",
+			"sigils": [
+				"Depleting"
+			],
+			"attack": 2,
+			"health": 3,
+			"mox_cost": [
+				"Orange"
+			],
+			"rare": true,
+			"description": "I am knowledged in great strengths. It might seem boring, but boring is practical."
+		},
+		{
+			"name": "Practice Wizard",
+			"attack": 0,
+			"health": 6,
+			"sigils": [
+				"Burrower"
+			],
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "Suddenly, its cogs and gears whir to life!"
+		},
+		{
+			"name": "Mage Pupil",
+			"sigils": [
+				"Fledgling",
+				"Gem Dependant"
+			],
+			"attack": 1,
+			"health": 1,
+			"description": "The sorcerer's apprentice... is it not a great position? You learn so much of the world and its workings...",
+			"evolution": "Junior Sage"
+		},
+		{
+			"name": "Ruby Golem",
+			"sigils": [
+				"Orange Mox",
+				"Ruby Heart"
+			],
+			"attack": 1,
+			"health": 1,
+			"description": "I am the will of the crystal in orange."
+		},
+		{
+			"name": "Stim Mage",
+			"sigils": [
+				"Blue Mox"
+			],
+			"attack": 0,
+			"health": 2,
+			"mox_cost": [
+				"Blue"
+			],
+			"atkspecial": "mox",
+			"description": "STIMULATION! HA HA HA!! YES!! AHAHA! I APPRECIATE EVERY MOX YOU PLAY!!! MORE STRONG!!"
+		},
+		{
+			"name": "Mox Tower",
+			"sigils": [
+				"Orange Mox",
+				"Sentry"
+			],
+			"attack": 0,
+			"health": 3,
+			"description": "You are not getting out.",
+			"energy_cost": 2
+		},
+		{
+			"name": "Mox Bunker",
+			"sigils": [
+				"Blue Mox",
+				"Armored"
+			],
+			"attack": 1,
+			"health": 3,
+			"description": "You are not getting in.",
+			"energy_cost": 2
+		},
+		{
+			"name": "Mox Encampment",
+			"sigils": [
+				"Green Mox",
+				"Sharp Quills"
+			],
+			"attack": 0,
+			"health": 3,
+			"description": "You are not getting through.",
+			"energy_cost": 2
+		},
+		{
+			"name": "Thief Mage",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Corpse Eater",
+				"Gem Dependant"
+			],
+			"description": "OOH! SHINY STUFF FROM CORPSE! Mine!!"
+		},
+		{
+			"name": "Life Mage",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Blood Lust"
+			],
+			"description": "Dark as it may be, letting lifeforce go to waste is depressing to me.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Green"
+			]
+		},
+		{
+			"name": "Dragon Egg",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Orange Mox",
+				"Frozen Away"
+			],
+			"description": "Don't take the bait.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"rare": true,
+			"evolution": "Ruby Dragon"
+		},
+		{
+			"name": "Ruby Dragon",
+			"attack": 2,
+			"health": 2,
+			"sigils": [
+				"Orange Mox",
+				"Airborne"
+			],
+			"banned": true,
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			],
+			"rare": true,
+			"description": "You took the bait."
+		},
+		{
+			"name": "Shower Mage",
+			"sigils": [
+				"Bone Digger",
+				"Stinky"
+			],
+			"attack": 0,
+			"health": 2,
+			"description": "Hey! I do shower every morning! I just do the stuff none of you ever want to do.",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			]
+		},
+		{
+			"name": "Holo Mox",
+			"sigils": [
+				"Orange Mox"
+			],
+			"attack": 0,
+			"health": 5,
+			"mox_cost": [
+				"Orange"
+			],
+			"description": "It seems fake, but it still channels orange mox."
+		},
+		{
+			"name": "Horse Mage",
+			"sigils": [
+				"Sprinter",
+				"Mighty Leap"
+			],
+			"attack": 2,
+			"health": 4,
+			"description": "Don't you know I'm a fan-favorite? I carry these mages. Every, single, day!",
+			"blood_cost": 1,
+			"mox_cost": [
+				"Orange"
+			]
+		},
+		{
+			"name": "Winged Guardian",
+			"attack": 2,
+			"health": 1,
+			"sigils": [
+				"Burrower",
+				"Airborne"
+			],
+			"description": "Go on without me!",
+			"mox_cost": [
+				"Green"
+			]
+		},
+		{
+			"name": "Swift Sage",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"True Scholar",
+				"Worthy Sacrifice"
+			],
+			"description": "As in... swift to accept sacrifice.",
+			"mox_cost": [
+				"Green"
+			],
+			"active": true
+		},
+		{
+			"name": "Dark Knight",
+			"attack": 4,
+			"health": 6,
+			"description": "The magic equivalent of an Urayuli...",
+			"mox_cost": [
+				"Orange",
+				"Green",
+				"Blue"
+			],
+			"rare": true
+		},
+		{
+			"name": "Animox",
+			"attack": 0,
+			"health": 2,
+			"sigils": [
+				"Blue Mox",
+				"Hefty"
+			],
+			"description": "Gotta go thanks",
+			"rare": false,
+			"banned": false
+		},
+		{
+			"name": "Withered Corpse",
+			"sigils": [
+				"Mighty Leap"
+			],
+			"attack": 0,
+			"health": 2,
+			"banned": true,
+			"rare": false,
+			"description": "Literal meat shields. What else can you do with 'em?"
+		},
+		{
+			"name": "Empty Vessel",
+			"attack": 0,
+			"health": 2,
+			"nosac": true,
+			"banned": true,
+			"description": "Empty as its soul, free as its case."
+		},
+		{
+			"name": "Leaping Vessel",
+			"sigils": [
+				"Mighty Leap"
+			],
+			"attack": 0,
+			"health": 2,
+			"nosac": true,
+			"banned": true,
+			"energy_cost": 1,
+			"description": "Hiyah!"
+		},
+		{
+			"name": "Energized Vessel",
+			"sigils": [
+				"Battery Bearer"
+			],
+			"attack": 0,
+			"health": 1,
+			"nosac": true,
+			"banned": true,
+			"energy_cost": 1,
+			"description": "Click!",
+			"conduit": true
+		},
+		{
+			"name": "Bloody Vessel",
+			"sigils": [
+				"Noble Sacrifice"
+			],
+			"attack": 0,
+			"health": 2,
+			"banned": true,
+			"description": "Ew.",
+			"energy_cost": 2
+		},
+		{
+			"name": "Splintered Vessel",
+			"sigils": [
+				"Bifurcated Strike"
+			],
+			"attack": 1,
+			"health": 1,
+			"banned": true,
+			"energy_cost": 3,
+			"description": "Ouch!"
+		},
+		{
+			"name": "Conductive Vessel",
+			"attack": 0,
+			"health": 2,
+			"nosac": true,
+			"conduit": true,
+			"banned": true,
+			"description": "BZZZ!",
+			"energy_cost": 1
+		},
+		{
+			"name": "Contaminated Vessel",
+			"sigils": [
+				"Touch of Death"
+			],
+			"attack": 0,
+			"health": 2,
+			"nosac": true,
+			"banned": true,
+			"energy_cost": 1,
+			"conduit": true,
+			"description": "Shyly toxic!"
+		},
+		{
+			"name": "Geck",
+			"attack": 1,
+			"health": 1,
+			"rare": true,
+			"description": "Ported from Act 1. Act 2 sprite from Kaycee's Mod. It's just a small reptile..."
+		},
+		{
+			"name": "Acid Squirrel",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Unkillable"
+			],
+			"banned": true,
+			"description": "Its suffering is eternal.",
+			"energy_cost": 3,
+			"rare": true
+		},
+		{
+			"name": "Shambling Cairn",
+			"attack": 0,
+			"health": 1,
+			"sigils": [
+				"Bone Digger"
+			],
+			"banned": true,
+			"description": "It makes bones, and what else?"
+		},
+		{
+			"name": "Moon Shard",
+			"attack": 0,
+			"health": 3,
+			"description": "Uh oh...?",
+			"banned": true,
+			"energy_cost": 3
+		},
+		{
+			"name": "The Moon",
+			"attack": 1,
+			"health": 40,
+			"banned": true,
+			"description": "UH OH!!!",
+			"sigils": [
+				"Omni Strike",
+				"Mighty Leap",
+				"Made of Stone"
+			]
+		}
+	],
+	"sigils": {
+		"Airborne": "A card bearing this sigil will strike an opponent directly, even if there is a creature opposing it.",
+		"Ant Spawner": "When a card bearing this sigil is played, an ant is created in your hand.",
+		"Armored": "The first time a card bearing this sigil would take damage, prevent that damage.",
+		"Attack Conduit": "Other creatures within a circuit completed by a card bearing this sigil gain 1 power.",
+		"Battery Bearer": "When a card bearing this sigil is played, it provides an energy cell to its owner.",
+		"Bees Within": "Once a card bearing this sigil is struck, a Bee is created in your hand.",
+		"Bellist": "When a card bearing this sigil is played, a Chime is created on each empty adjacent space. A card bearing this sigil will perform a retaliatory attack against any card striking a Chime.",
+		"Bifurcated Strike": "A card bearing this sigil will strike each opposing space to the left and right of the space across from it.",
+		"Blood Lust": "When a card bearing this Sigil attacks an opposing creature and it perishes, this card gains 1 power.",
+		"Blue Mox": "While a card bearing this sigil is on the board, it provides a blue gem to its owner.",
+		"Bomb Spewer": "When a card bearing this sigil is played, fill all empty spaces with explode bots.",
+		"Bone Digger": "At the end of the owner's turn, a card bearing this sigil will generate 1 bone.",
+		"Bone King": "When a card bearing this sigil dies, 4 bones are awarded instead of 1.",
+		"Bonehorn": "Pay 1 energy to gain 3 bones.",
+		"Bonehorn (1)": "Pay 1 energy to gain 1 bone.",
+		"Boneless": "When a card bearing this sigil dies, no bones are awarded.",
+		"Brittle": "After attacking, a card bearing this sigil perishes.",
+		"Burrower": "When an empty space would be struck, a card bearing this sigil will move to that space to receive the strike instead.",
+		"Corpse Eater": "If a creature that you own perishes by combat, a card bearing this sigil in your hand is automatically played in its place.",
+		"Dam Builder": "When a card bearing this sigil is played, a Dam is created on each empty adjacent space.",
+		"Depleting": "When a card bearing this sigil is played, 2 energy cells are removed from its owner",
+		"Detonator": "When a card bearing this sigil dies, the creature opposing it, as well as adjacent friendly creatures, are dealt 10 damage.",
+		"Detonator (5)": "When a card bearing this sigil dies, the creature opposing it, as well as adjacent friendly creatures, are dealt 5 damage.",
+		"Disentomb": "Pay 1 bone to create a skeleton in your hand.",
+		"Disentomb (Corpses)": "Pay 2 bones to create a withered corpse in your hand.",
+		"Double Death": "When another creature you own dies, it is returned to life and dies again immediately.",
+		"Double Strike": "A card bearing this Sigil will strike the opposing space an extra time when attacking.",
+		"Energy Conduit": "If a card bearing this sigil is part of a completed circuit, your energy never depletes.",
+		"Energy Conduit (+3)": "If a card bearing this sigil is part of a completed circuit, your maximum energy increases by 3.",
+		"Energy Gun": "Pay 1 energy to deal 1 damage to the creature across from a card bearing this sigil.",
+		"Enlarge": "Pay 2 bones to increase the power and health of a card bearing this sigil by 1.",
+		"Enlarge (3)": "Pay 3 bones to increase the power and health of a card bearing this sigil by 1.",
+		"Fecundity": "When a card bearing this sigil is played, a copy of it is created in your hand.",
+		"Fecundity (Kaycee)": "When a card bearing this sigil is played, a copy of it is created in your hand without this sigil.",
+		"Fledgling": "A card bearing this sigil will grow into a more powerful form after 1 turn on the board.",
+		"Frozen Away": "When a card bearing this sigil perishes, the creature inside is released in its place.",
+		"Gem Animator": "Mox cards on the owner's side of the board gain 1 power.",
+		"Gem Dependant": "If a card bearing this sigil's owner controls no mox cards, a card bearing this sigil perishes.",
+		"Gem Detonator (5)": "When Mox cards on the owner's side of the board die, they Detonate (the creature opposing them, as well as adjacent friendly creatures, are dealt 5 damage).",
+		"Gem Guardian": "When a card bearing this sigil is played, all Moxa cards on the owners' side of the board gain Nano Armor.",
+		"Great Mox": "While a card bearing this sigil is on the board, it provides a green, orange, and blue gem to its owner.",
+		"Green Mox": "While a card bearing this sigil is on the board, it provides a green gem to its owner.",
+		"Guardian": "When an opposing creature is placed opposite to an empty space, a card bearing this sigil will move to that empty space.",
+		"Handy": "When a card bearing this sigil is played, discard your hand then draw a new hand of 4 cards.",
+		"Hefty": "At the end of the owner's turn, a card bearing this sigil will move in the direction inscribed in the sigil. creatures in the way will be pushed in the same direction.",
+		"Hoarder": "When a card bearing this sigil is played, you may search your deck for any card and take it into your hand.",
+		"Leader": "Creatures adjacent to a card bearing this sigil gain 1 Power.",
+		"Looter": "When a card bearing this sigil deals damage directly, draw a card for each damage dealt.",
+		"Made of Stone": "A card bearing this sigil is immune to the effects of touch of death and stinky.",
+		"Many Lives": "When a card bearing this sigil is sacrificed it does not perish.",
+		"Marrow Sucker": "Pay 2 bones to heal a card bearing this sigil.",
+		"Mental Gemnastics": "When a card bearing this sigil is played, you draw cards equal to the amount of mox cards on your side of the board.",
+		"Mighty Leap": "A card bearing this sigil will block an opposing creature bearing the airborne sigil.",
+		"Music Player": "A card bearing this sigil plays a song of your choice when played",
+		"Orange Mox": "While a card bearing this sigil is on the board, it provides an orange gem to its owner.",
+		"Omni Strike": "A card bearing this sigil will strike all opposing spaces.",
+		"Power Dice": "Pay 1 energy to set the power of a card bearing this sigil randomly between 1 and 6.",
+		"Power Dice (2)": "Pay 2 energy to set the power of a card bearing this sigil randomly between 1 and 6.",
+		"Rabbit Hole": "When a card bearing this sigil is played, a Rabbit is created in your hand.",
+		"Reconstitute": "A card bearing this sigil returns to your hand 2 turns after it persihes.",
+		"Repulsive": "If a creature would attack a card bearing this sigil, it does not.",
+		"Ruby Heart": "When a card bearing this sigil perishes, a ruby mox is created in its place.",
+		"Noble Sacrifice": "A card bearing this sigil is counted as 2 blood rather than 1 blood when sacrificed.",
+		"Scopophobic": "A card bearing this sigil gains 1 power when not facing an enemy creature.",
+		"Sentry": "When a creature moves into the space opposing a card bearing this sigil, they are dealt 1 damage.",
+		"Sharp Quills": "Once a card bearing this sigil is struck, the striker is then dealt a single damage point.",
+		"Side Hustle": "When a card bearing this sigil deals damage directly, draw a card from your side deck for each damage dealt.",
+		"Skeleton Crew": "At the end of the owner's turn, a card bearing this sigil will move in the direction inscribed in the sigil and drop a skeleton in its old space.",
+		"Skeleton Crew (Yarr)": "At the end of the owner's turn, a card bearing this sigil will move in the direction inscribed in the sigil and drop a pirate skeleton in its old space.",
+		"Spawn Conduit": "Empty spaces within a circuit completed by a card bearing this sigil spawn L33pB0ts at the end of the owner's turn.",
+		"Sprinter": "At the end of the owner's turn, a card bearing this sigil will move in the direction inscribed in the sigil.",
+		"Squirrel Shedder": "At the end of the owner's turn, a card bearing this sigil will move in the direction inscribed in the sigil and drop a squirrel in their old space.",
+		"Stinky": "The creature opposing a card bearing this sigil loses 1 Power.",
+		"Stimulate": "Pay 3 energy to increase the power and health of a card bearing this sigil by 1.",
+		"Stimulate (4)": "Pay 4 energy to increase the power and health of a card bearing this sigil by 1.",
+		"Tentacle": "Includes effect of Waterborne. In addition, a card bearing this sigil will transform into a random tentacle at the start of each turn.",
+		"Thick": "A card bearing this sigil is juicy, and takes up 2 spaces.",
+		"Touch of Death": "When a card bearing this sigil damages another creature, that creature perishes.",
+		"Transformer": "At the beginning of your turn a card bearing this sigil will transform to, or from, Beast mode.",
+		"Trifurcated Strike": "A card bearing this sigil will strike each opposing space to the left, right, and center of it.",
+		"True Scholar": "If you have a blue gem, sacrifice a card bearing this sigil to draw 3 cards.",
+		"Unkillable": "When a card bearing this sigil perishes, a copy of it is created in your hand.",
+		"Vessel Printer": "Once a card bearing this sigil is struck, draw a card from your side deck.",
+		"Waterborne": "A card bearing this sigil submerges itself during its opponent's turn. while submerged, opposing creatures attack its owner directly.",
+		"Worthy Sacrifice": "A card bearing this sigil is counted as 3 blood rather than 1 blood when sacrificed."
+	},
+	"working_sigils": [
+		"Airborne",
+		"Mighty Leap",
+		"Fecundity (Kaycee)",
+		"Fecundity",
+		"Unkillable",
+		"Blue Mox",
+		"Green Mox",
+		"Orange Mox",
+		"Great Mox",
+		"Rabbit Hole",
+		"Touch of Death",
+		"Many Lives",
+		"Trifurcated Strike",
+		"Battery Bearer",
+		"Repulsive",
+		"Brittle",
+		"Worthy Sacrifice",
+		"Gem Dependant",
+		"Bone King",
+		"Bifurcated Strike",
+		"Handy",
+		"Fledgling",
+		"Sprinter",
+		"Squirrel Shedder",
+		"Skeleton Crew",
+		"Bone Digger",
+		"Waterborne",
+		"Ruby Heart",
+		"Frozen Away",
+		"Mental Gemnastics",
+		"Looter",
+		"Gem Animator",
+		"Hefty",
+		"Guardian",
+		"Sharp Quills",
+		"Sentry",
+		"Burrower",
+		"Hoarder",
+		"Detonator",
+		"Detonator (5)",
+		"Bomb Spewer",
+		"Double Death",
+		"Enlarge",
+		"Disentomb",
+		"Disentomb (Corpses)",
+		"Power Dice",
+		"Power Dice (2)",
+		"Stimulate",
+		"Stimulate (4)",
+		"Energy Gun",
+		"True Scholar",
+		"Bonehorn",
+		"Bonehorn (1)",
+		"Boneless",
+		"Attack Conduit",
+		"Spawn Conduit",
+		"Energy Conduit",
+		"Energy Conduit (+3)",
+		"Tentacle",
+		"Stinky",
+		"Reconstitute",
+		"Noble Sacrifice",
+		"Made of Stone",
+		"Side Hustle",
+		"Armored",
+		"Leader",
+		"Ant Spawner",
+		"Double Strike",
+		"Blood Lust",
+		"Music Player",
+		"Transformer",
+		"Vessel Printer",
+		"Bees Within",
+		"Dam Builder",
+		"Corpse Eater",
+		"Gem Guardian",
+		"Gem Detonator (5)",
+		"Depleting",
+		"Bellist",
+		"Omni Strike",
+		"Enlarge (3)",
+		"Skeleton Crew (Yarr)",
+		"Thick"
+	],
+	"side_decks": {
+		"Sacrificial Draft": {
+			"type": "draft",
+			"cards": [
+				"Squirrel",
+				"Rabbit",
+				"Bloody Vessel",
+				"Stoat",
+				"Skeleton"
+			],
+			"count": 12
+		},
+		"Spooky Draft": {
+			"type": "draft",
+			"cards": [
+				"Skeleton",
+				"Skeleton Crew",
+				"Zombie Parrot",
+				"Shambling Cairn",
+				"Black Goat"
+			],
+			"count": 12
+		},
+		"Technologic Draft": {
+			"type": "draft",
+			"cards": [
+				"Empty Vessel",
+				"Energized Vessel",
+				"Conductive Vessel",
+				"Leaping Vessel",
+				"Bloody Vessel",
+				"Splintered Vessel",
+				"Contaminated Vessel",
+				"Ruby Mox",
+				"Emerald Mox",
+				"Sapphire Mox"
+			],
+			"count": 12
+		},
+		"Mox Draft": {
+			"type": "draft",
+			"cards": [
+				"Ruby Mox",
+				"Emerald Mox",
+				"Sapphire Mox",
+				"Animox",
+				"Bleene's Mox",
+				"Goranj's Mox",
+				"Orlu's Mox",
+				"Magnus Mox"
+			],
+			"count": 12
+		},
+		"Mixed Draft": {
+			"type": "draft",
+			"cards": [
+				"Squirrel",
+				"Skeleton",
+				"Empty Vessel",
+				"Energized Vessel",
+				"Conductive Vessel",
+				"Ruby Mox",
+				"Emerald Mox",
+				"Sapphire Mox"
+			],
+			"count": 12
+		},
+		"The Acid Squirrel": {
+			"type": "single",
+			"card": "Acid Squirrel",
+			"count": 1
+		},
+		"The Energy Bot": {
+			"type": "single",
+			"card": "Energy Bot",
+			"count": 1
+		}
+	},
+	"starting_energy_max": 2
+}
