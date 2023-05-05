@@ -10,4 +10,4 @@ Download this game. Use the "From File" button on the downloaded json to add the
 
 https://drive.google.com/file/d/1THO43DIwNqHjwX3rt1YnvKTtClbnVN86/view  
 Download and replace the pck file. This is untested but it adds some modder API so expect bugs on both sides  
-Thanks to uwumacaronitime#6201 for slapping this together in an hour with no prompting other than a silly mistake on my end
+Thanks to uwumacaronitime for slapping this together in an hour with no prompting other than a silly mistake on my end
