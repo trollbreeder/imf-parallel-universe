@@ -1,5 +1,5 @@
 {
-	"ruleset": "Parallel Universe v0.1",
+	"ruleset": "Parallel Universe v0.2",
 	"hammers_per_turn": 3,
 	"ant_limit": 3,
 	"deck_size_min": 15,
@@ -9,7 +9,7 @@
 	"variable_attack_nerf": true,
 	"allow_snuffing_candles": true,
 	"opt_actives": false,
-	"enable_backrow": true,
+	"enable_backrow": false,
 	"portrait": "portraits/Amoeba",
 	"description": "Woah everything's different!!\nA clean-room reimagining\nof every card by Trollbreeder\n(with strange balancing, i'm sorry\nit's gonna be like that)",
 	"cards": [{
@@ -84,24 +84,23 @@
 		},
 		{
 			"name": "Bee",
-			"attack": 3,
-			"health": 1,
+			"attack": 1,
+			"health": 2,
 			"banned": true,
-			"blood_cost": 2,
-			"description": "Killer Bees.",
-			"sigils": [
-				"Airborne"
-			]
+			"description": "Bee jumpscare!",
+			"sigils": []
 		},
 		{
 			"name": "Beehive",
 			"sigils": [
-				"Frozen Away"
+				"Frozen Away",
+				"Unkillable"
 			],
 			"attack": 0,
-			"health": 2,
+			"health": 1,
 			"blood_cost": 1,
-			"description": "Hit me and get a free bee. Like a bait bucket.",
+			"bone_cost": 2,
+			"description": "Hit me and get a free bee! Recyclable",
 			"evolution": "Bee"
 		},
 		{
@@ -466,21 +465,25 @@
 		},
 		{
 			"name": "Opossum",
-			"attack": 0,
-			"health": 1
+			"description": "I'm not a bad card! I'm not a misplay! Noooo!",
+			"attack": 1,
+			"health": 3,
+			"bone_cost": 3
 		},
 		{
 			"name": "Ouroboros",
 			"sigils": [
-				"Hoarder",
-				"Reconstitute"
+				"Unkillable",
+				"Brittle"
 			],
-			"attack": 1,
-			"health": 1,
+			"attack": 2,
+			"health": 2,
 			"rare": true,
-			"description": "Magpieborous",
-			"blood_cost": 2,
-			"energy_cost": 2
+			"description": "Ourobones",
+			"nosac": true,
+			"nohammer": true,
+			"blood_cost": 1,
+			"bone_cost": 8
 		},
 		{
 			"name": "Rabbit",
@@ -500,7 +503,7 @@
 				"Repulsive"
 			],
 			"description": "Shuts down its lane.",
-			"blood_cost": 2
+			"blood_cost": 1
 		},
 		{
 			"name": "Coyote",
@@ -621,7 +624,7 @@
 			"health": 1,
 			"bone_cost": 2,
 			"mox_cost": [
-				"Blue"
+				"Orange"
 			],
 			"description": "It keeps panicking, despite magic letting it live."
 		},
@@ -632,7 +635,7 @@
 			"description": "Ported from Act 1. Act 2 sprite by syntaxevasion. Protective magic mantis.",
 			"blood_cost": 1,
 			"mox_cost": [
-				"Green"
+				"Orange"
 			],
 			"sigils": [
 				"Bifurcated Strike"
@@ -747,6 +750,7 @@
 				"Orange"
 			],
 			"rare": true,
+			"bone_cost": 3,
 			"description": "For whom the bells toll... enjoy Daus infestation."
 		},
 		{
@@ -758,10 +762,10 @@
 			"health": 1,
 			"rare": true,
 			"mox_cost": [
-				"Green"
+				"Orange"
 			],
-			"description": "Blue mage.",
-			"blood_cost": 1
+			"blood_cost": 1,
+			"description": "Blue mage."
 		},
 		{
 			"name": "Mirror Tentacle",
@@ -771,10 +775,10 @@
 			"attack": 0,
 			"health": 1,
 			"mox_cost": [
-				"Blue"
+				"Orange"
 			],
 			"rare": true,
-			"blood_cost": 1,
+			"energy_cost": 4,
 			"description": "Magpie."
 		},
 		{
@@ -826,11 +830,8 @@
 				"Bees Within"
 			],
 			"attack": 0,
-			"health": 2,
-			"blood_cost": 1,
-			"mox_cost": [
-				"Green"
-			],
+			"health": 6,
+			"blood_cost": 2,
 			"rare": true,
 			"description": "The rabbits within have all died already. Something else is inside..."
 		},
@@ -839,11 +840,11 @@
 			"attack": 0,
 			"health": 3,
 			"mox_cost": [
-				"Green"
+				"Orange"
 			],
 			"description": "The wolf, a keeper of magic.",
 			"sigils": [
-				"Green Mox",
+				"Orange Mox",
 				"Gem Guardian"
 			],
 			"blood_cost": 1,
@@ -853,12 +854,12 @@
 			"name": "Wolf Cub",
 			"sigils": [
 				"Gem Dependant",
-				"Green Mox"
+				"Orange Mox"
 			],
 			"attack": 1,
 			"health": 1,
 			"mox_cost": [
-				"Green"
+				"Orange"
 			],
 			"description": "The wolf's apprentice."
 		},
@@ -915,16 +916,11 @@
 			"name": "Bullet Ant",
 			"attack": 0,
 			"health": 1,
-			"sigils": [
-				"Power Dice (2)",
-				"Depleting"
-			],
-			"energy_cost": 2,
-			"bone_cost": 3,
+			"sigils": [],
 			"conduit": true,
-			"description": "Ante up.",
+			"description": "Awaiting sniper sigil implementation. This ant is out of commision",
 			"rare": true,
-			"active": true
+			"banned": true
 		},
 		{
 			"name": "Mole Seaman",
@@ -942,9 +938,9 @@
 		{
 			"name": "Curve Hopper",
 			"attack": 1,
-			"health": 1,
+			"health": 3,
 			"rare": true,
-			"energy_cost": 1,
+			"energy_cost": 2,
 			"description": "Fast fast fast!! Hop around the curve!!",
 			"sigils": [
 				"Sprinter",
@@ -989,16 +985,12 @@
 		},
 		{
 			"name": "Buff Conduit",
-			"sigils": [
-				"Attack Conduit"
-			],
-			"attack": 0,
+			"sigils": [],
+			"attack": 2,
 			"health": 2,
-			"mox_cost": [
-				"Green"
-			],
+			"energy_cost": 4,
 			"conduit": true,
-			"description": "Power up!"
+			"description": "The powerlines are fighting back!!"
 		},
 		{
 			"name": "Busted 3D Printer",
@@ -1029,17 +1021,13 @@
 		{
 			"name": "Energy Conduit",
 			"sigils": [
-				"Energy Conduit (+3)"
+				"Battery Bearer"
 			],
 			"attack": 0,
-			"health": 1,
+			"health": 3,
 			"conduit": true,
-			"rare": true,
 			"description": "It's connected to the mains.",
-			"energy_cost": 2,
-			"mox_cost": [
-				"Blue"
-			]
+			"energy_cost": 3
 		},
 		{
 			"name": "Explode Bot",
@@ -1057,16 +1045,13 @@
 		{
 			"name": "Factory Conduit",
 			"sigils": [
-				"Energy Conduit (+3)"
+				"Spawn Conduit"
 			],
 			"attack": 0,
 			"health": 3,
 			"conduit": true,
 			"bone_cost": 3,
-			"energy_cost": 2,
-			"mox_cost": [
-				"Orange"
-			],
+			"energy_cost": 3,
 			"description": "L33pbots are powerful mantis conduits basically"
 		},
 		{
@@ -1074,10 +1059,10 @@
 			"sigils": [
 				"Handy"
 			],
-			"attack": 0,
+			"attack": 1,
 			"health": 1,
 			"description": "Gamble on your future, discard your hand today!",
-			"energy_cost": 2
+			"energy_cost": 3
 		},
 		{
 			"name": "GR1ZZ",
@@ -1088,7 +1073,7 @@
 			"health": 1,
 			"energy_cost": 3,
 			"mox_cost": [
-				"Green"
+				"Blue"
 			],
 			"conduit": true,
 			"description": "Discount swapbot",
@@ -1101,7 +1086,7 @@
 			"health": 3,
 			"energy_cost": 3,
 			"mox_cost": [
-				"Orange"
+				"Blue"
 			],
 			"conduit": true,
 			"description": "Discount swapbot"
@@ -1112,7 +1097,7 @@
 			"health": 1,
 			"energy_cost": 2,
 			"mox_cost": [
-				"Orange"
+				"Blue"
 			],
 			"conduit": true,
 			"atkspecial": "mox",
@@ -1126,7 +1111,7 @@
 			"energy_cost": 1,
 			"rare": true,
 			"mox_cost": [
-				"Green"
+				"Blue"
 			],
 			"description": "Slap-dash contraption of random parts. Somehow it works.",
 			"sigils": [
@@ -1143,7 +1128,7 @@
 			"attack": 1,
 			"health": 1,
 			"mox_cost": [
-				"Orange"
+				"Blue"
 			],
 			"banned": true,
 			"description": "We are legion. We are l33pbotkind.",
@@ -1152,12 +1137,11 @@
 		{
 			"name": "M3atB0t",
 			"sigils": [
-				"Bone King",
-				"Ruby Heart"
+				"Bone King"
 			],
 			"attack": 0,
 			"health": 2,
-			"energy_cost": 2,
+			"energy_cost": 3,
 			"banned": true,
 			"description": "More like bonebot, am i right?"
 		},
@@ -1169,7 +1153,6 @@
 			"attack": 2,
 			"health": 4,
 			"energy_cost": 4,
-			"banned": true,
 			"description": "Elk swap"
 		},
 		{
@@ -1179,9 +1162,9 @@
 				"Made of Stone"
 			],
 			"attack": 1,
-			"health": 12,
+			"health": 16,
 			"rare": true,
-			"description": "Uh oh.",
+			"description": "Can you even make this card work? I'd be proud of you if you did.",
 			"blood_cost": 1,
 			"bone_cost": 4,
 			"energy_cost": 6,
@@ -1203,7 +1186,7 @@
 			"health": 1,
 			"active": true,
 			"mox_cost": [
-				"Green"
+				"Blue"
 			],
 			"description": "Pull back and let go! See the amazing results!",
 			"sigils": [
@@ -1254,9 +1237,6 @@
 			"attack": 1,
 			"health": 1,
 			"description": "Get off the premises.",
-			"mox_cost": [
-				"Green"
-			],
 			"energy_cost": 1
 		},
 		{
@@ -1268,9 +1248,6 @@
 			"attack": 1,
 			"health": 2,
 			"energy_cost": 2,
-			"mox_cost": [
-				"Green"
-			],
 			"description": "No loitering... not at all!"
 		},
 		{
@@ -1302,7 +1279,7 @@
 				"Fledgling"
 			],
 			"attack": 1,
-			"health": 1,
+			"health": 2,
 			"energy_cost": 3,
 			"description": "Powercreep.",
 			"evolution": "SON1A (beast)"
@@ -1313,33 +1290,28 @@
 				"Trifurcated Strike"
 			],
 			"attack": 1,
-			"health": 2,
-			"energy_cost": 3,
+			"health": 1,
+			"energy_cost": 6,
 			"description": "Powercreep god.",
-			"mox_cost": [
-				"Orange"
-			],
 			"banned": true
 		},
 		{
 			"name": "Mrs. Bomb",
 			"sigils": [
-				"Detonator",
-				"Detonator"
+				"Thick",
+				"Depleting"
 			],
+			"left_half": "Explode Bot",
+			"right_half": "Explode Bot",
 			"attack": 2,
-			"health": 1,
+			"health": 2,
 			"rare": true,
-			"energy_cost": 4,
-			"mox_cost": [
-				"Orange"
-			],
-			"description": "Explode already."
+			"description": "Splits into two explodebots. Stop giggling."
 		},
 		{
 			"name": "Shutterbug",
 			"sigils": [
-				"Fecundity",
+				"Fecundity (Kaycee)",
 				"Touch of Death"
 			],
 			"attack": 1,
@@ -1348,7 +1320,7 @@
 			"description": "That's going in my cringe collection.",
 			"energy_cost": 4,
 			"mox_cost": [
-				"Green"
+				"Blue"
 			]
 		},
 		{
@@ -1356,7 +1328,7 @@
 			"attack": 1,
 			"health": 1,
 			"energy_cost": 2,
-			"description": "Just aim... aim and fire...",
+			"description": "Broken sigils. Sorry.",
 			"sigils": [
 				"Scopophobic",
 				"Airborne"
@@ -1370,7 +1342,7 @@
 			"description": "The ultimate wall.",
 			"energy_cost": 6,
 			"mox_cost": [
-				"Orange"
+				"Blue"
 			],
 			"sigils": [
 				"Armored",
@@ -1397,7 +1369,7 @@
 			"health": 3,
 			"energy_cost": 2,
 			"mox_cost": [
-				"Green"
+				"Blue"
 			],
 			"description": "Who is that?",
 			"sigils": [
@@ -1449,8 +1421,7 @@
 				"Attack Conduit"
 			],
 			"description": "Inspiring tunes for your robot army. If only you had enough electricity to power it though.",
-			"energy_cost": 3,
-			"banned": true
+			"energy_cost": 3
 		},
 		{
 			"name": "Draugr",
@@ -1461,7 +1432,6 @@
 			"attack": 0,
 			"health": 1,
 			"bone_cost": 1,
-			"banned": true,
 			"description": "There's a skeleton inside... just like in YOU!!",
 			"evolution": "Skeleton"
 		},
@@ -1474,7 +1444,6 @@
 			"attack": 1,
 			"health": 1,
 			"bone_cost": 4,
-			"banned": true,
 			"description": "AAAAAAAAAAA"
 		},
 		{
@@ -1542,12 +1511,11 @@
 				"Omni Strike",
 				"Brittle"
 			],
-			"attack": 3,
+			"attack": 4,
 			"health": 1,
 			"description": "Get out of bad situation free card",
 			"rare": true,
-			"bone_cost": 8,
-			"energy_cost": 3
+			"bone_cost": 6
 		},
 		{
 			"name": "Pharaoh's Pets",
@@ -1586,16 +1554,13 @@
 			"attack": 0,
 			"health": 1,
 			"bone_cost": 4,
-			"mox_cost": [
-				"Orange"
-			],
 			"rare": true,
 			"description": "None of them are used to fighting. They need encouragement."
 		},
 		{
 			"name": "Frank & Stein",
-			"attack": 2,
-			"health": 2,
+			"attack": 3,
+			"health": 4,
 			"bone_cost": 4,
 			"rare": true,
 			"description": "\"Two into one! Two into one!\" the mycologists cried in unison. The experiment was a success. It was...",
@@ -1637,7 +1602,7 @@
 			"health": 1,
 			"energy_cost": 2,
 			"mox_cost": [
-				"Blue"
+				"Green"
 			],
 			"rare": true,
 			"description": "HEAR YE HEAR YE! We're going 6 feet under soon! Visit Davy Jones' before our skulls dry up on shore!",
@@ -1679,7 +1644,7 @@
 			"rare": true,
 			"bone_cost": 8,
 			"mox_cost": [
-				"Orange"
+				"Green"
 			],
 			"description": "He had a head after all."
 		},
@@ -1702,9 +1667,9 @@
 			"health": 3,
 			"rare": true,
 			"description": "I shall raise the dead as spooky skeletons! And no one will stop me!!",
-			"bone_cost": 5,
+			"bone_cost": 3,
 			"mox_cost": [
-				"Blue"
+				"Green"
 			],
 			"active": true
 		},
@@ -1732,7 +1697,7 @@
 		{
 			"name": "Skeleton",
 			"attack": 1,
-			"health": 1,
+			"health": 2,
 			"description": "Very spoopy.",
 			"sigils": [
 				"Brittle"
@@ -1743,11 +1708,11 @@
 			"sigils": [
 				"Brittle"
 			],
-			"attack": 2,
+			"attack": 3,
 			"health": 1,
-			"bone_cost": 4,
+			"bone_cost": 3,
 			"mox_cost": [
-				"Orange"
+				"Green"
 			],
 			"description": "And what do you know about spells? I'm a 400-year-old sorcerer!"
 		},
@@ -1765,12 +1730,12 @@
 		{
 			"name": "Zombie",
 			"attack": 2,
-			"health": 1,
+			"health": 3,
 			"sigils": [
 				"Brittle"
 			],
-			"energy_cost": 1,
-			"description": "Brains!"
+			"energy_cost": 2,
+			"description": "Central processor units! That doesn't roll off the tongue as well as braaaains..."
 		},
 		{
 			"name": "Floating Eye",
@@ -1780,39 +1745,38 @@
 				"Sentry"
 			],
 			"description": "I see ya mate. I see ya!!",
-			"bone_cost": 2
+			"bone_cost": 1
 		},
 		{
 			"name": "Gargoyle",
 			"attack": 1,
-			"health": 2,
+			"health": 1,
 			"sigils": [
 				"Fecundity"
 			],
 			"description": "hee hee. i love making you suffer for ridiculously long amounts of time",
 			"blood_cost": 1,
-			"bone_cost": 4
+			"bone_cost": 2
 		},
 		{
 			"name": "Skeleton Crew",
-			"attack": 1,
-			"health": 1,
+			"attack": 2,
+			"health": 2,
 			"sigils": [
-				"Brittle",
-				"Vessel Printer"
+				"Brittle"
 			],
-			"bone_cost": 1,
 			"description": "Yar har har! Yo ho ho!",
-			"energy_cost": 1
+			"energy_cost": 2,
+			"banned": true
 		},
 		{
 			"name": "Zombie Parrot",
-			"attack": 0,
-			"health": 1,
+			"attack": 1,
+			"health": 6,
 			"sigils": [
-				"Vessel Printer"
+				"Brittle"
 			],
-			"bone_cost": 1,
+			"energy_cost": 2,
 			"description": "SKREEET! YAR HAR! YO HO!"
 		},
 		{
@@ -1821,10 +1785,9 @@
 				"Blood Lust",
 				"Corpse Eater"
 			],
-			"attack": 2,
-			"health": 1,
+			"attack": 1,
+			"health": 3,
 			"mox_cost": [
-				"Orange",
 				"Green"
 			],
 			"description": "Mmm. Tasty. I love the smell of iron in the morning."
@@ -2019,10 +1982,11 @@
 			"name": "Bleene's Mox",
 			"sigils": [
 				"Blue Mox",
-				"Green Mox"
+				"Green Mox",
+				"Brittle"
 			],
-			"attack": 0,
-			"health": 3,
+			"attack": 1,
+			"health": 1,
 			"rare": true,
 			"mox_cost": [
 				"Orange"
@@ -2034,68 +1998,76 @@
 			"name": "Goranj's Mox",
 			"sigils": [
 				"Orange Mox",
-				"Green Mox"
+				"Green Mox",
+				"Brittle"
 			],
-			"attack": 0,
-			"health": 3,
+			"attack": 1,
+			"health": 1,
 			"rare": true,
 			"mox_cost": [
 				"Blue"
 			],
-			"banned": true,
-			"conduit": true
+			"banned": true
 		},
 		{
 			"name": "Orlu's Mox",
 			"sigils": [
 				"Orange Mox",
-				"Blue Mox"
+				"Blue Mox",
+				"Brittle"
 			],
-			"attack": 0,
-			"health": 3,
+			"attack": 1,
+			"health": 1,
 			"rare": true,
 			"mox_cost": [
 				"Green"
 			],
-			"banned": true,
-			"conduit": true
+			"banned": true
 		},
 		{
 			"name": "Emerald Mox",
 			"sigils": [
-				"Green Mox"
+				"Green Mox",
+				"Brittle"
 			],
-			"attack": 0,
-			"health": 3,
-			"banned": true
+			"attack": 1,
+			"health": 1,
+			"banned": true,
+			"description": "Mox skeleton"
 		},
 		{
 			"name": "Ruby Mox",
 			"sigils": [
-				"Orange Mox"
+				"Orange Mox",
+				"Brittle"
 			],
-			"attack": 0,
-			"health": 3,
-			"banned": true
+			"attack": 1,
+			"health": 1,
+			"banned": true,
+			"description": "Mox skeleton"
 		},
 		{
 			"name": "Sapphire Mox",
 			"sigils": [
-				"Blue Mox"
+				"Blue Mox",
+				"Brittle"
 			],
-			"attack": 0,
-			"health": 3,
-			"banned": true
+			"attack": 1,
+			"health": 1,
+			"banned": true,
+			"description": "Mox skeleton"
 		},
 		{
 			"name": "Magnus Mox",
 			"sigils": [
-				"Great Mox"
+				"Great Mox",
+				"Brittle"
 			],
-			"attack": 0,
+			"attack": 1,
 			"health": 1,
 			"banned": true,
-			"rare": true
+			"rare": true,
+			"description": "Mox skeleton"
 		},
 		{
 			"name": "Muscle Mage",
@@ -2169,35 +2141,32 @@
 		{
 			"name": "Mox Tower",
 			"sigils": [
-				"Orange Mox",
-				"Sentry"
+				"Orange Mox"
 			],
 			"attack": 0,
-			"health": 3,
-			"description": "You are not getting out.",
-			"energy_cost": 2
+			"health": 2,
+			"description": "The heavens will be orange!",
+			"banned": true
 		},
 		{
 			"name": "Mox Bunker",
 			"sigils": [
-				"Blue Mox",
-				"Armored"
+				"Blue Mox"
 			],
-			"attack": 1,
-			"health": 3,
-			"description": "You are not getting in.",
-			"energy_cost": 2
+			"attack": 0,
+			"health": 2,
+			"description": "The water deep beneath will be blue!",
+			"banned": true
 		},
 		{
 			"name": "Mox Encampment",
 			"sigils": [
-				"Green Mox",
-				"Sharp Quills"
+				"Green Mox"
 			],
 			"attack": 0,
-			"health": 3,
-			"description": "You are not getting through.",
-			"energy_cost": 2
+			"health": 2,
+			"description": "The grass under our feet will be green!",
+			"banned": true
 		},
 		{
 			"name": "Thief Mage",
@@ -2395,21 +2364,21 @@
 				"Noble Sacrifice"
 			],
 			"attack": 0,
-			"health": 2,
+			"health": 1,
 			"banned": true,
 			"description": "Ew.",
-			"energy_cost": 2
+			"energy_cost": 4
 		},
 		{
 			"name": "Splintered Vessel",
 			"sigils": [
 				"Bifurcated Strike"
 			],
-			"attack": 1,
+			"attack": 0,
 			"health": 1,
 			"banned": true,
-			"energy_cost": 3,
-			"description": "Ouch!"
+			"energy_cost": 1,
+			"description": "Hmm!"
 		},
 		{
 			"name": "Conductive Vessel",
@@ -2664,7 +2633,7 @@
 				"Rabbit",
 				"Bloody Vessel",
 				"Stoat",
-				"Skeleton"
+				"Ruby Mox"
 			],
 			"count": 12
 		},
@@ -2675,7 +2644,8 @@
 				"Skeleton Crew",
 				"Zombie Parrot",
 				"Shambling Cairn",
-				"Black Goat"
+				"Black Goat",
+				"Emerald Mox"
 			],
 			"count": 12
 		},
@@ -2689,8 +2659,6 @@
 				"Bloody Vessel",
 				"Splintered Vessel",
 				"Contaminated Vessel",
-				"Ruby Mox",
-				"Emerald Mox",
 				"Sapphire Mox"
 			],
 			"count": 12
@@ -2701,27 +2669,28 @@
 				"Ruby Mox",
 				"Emerald Mox",
 				"Sapphire Mox",
-				"Animox",
 				"Bleene's Mox",
 				"Goranj's Mox",
 				"Orlu's Mox",
-				"Magnus Mox"
+				"Magnus Mox",
+				"Mox Tower",
+				"Mox Bunker",
+				"Mox Encampment"
 			],
 			"count": 12
 		},
 		"Mixed Draft": {
 			"type": "draft",
 			"cards": [
-				"Squirrel",
-				"Skeleton",
+				"Rabbit",
+				"Shambling Cairn",
 				"Empty Vessel",
-				"Energized Vessel",
 				"Conductive Vessel",
 				"Ruby Mox",
 				"Emerald Mox",
 				"Sapphire Mox"
 			],
-			"count": 12
+			"count": 8
 		},
 		"The Acid Squirrel": {
 			"type": "single",
@@ -2732,7 +2701,13 @@
 			"type": "single",
 			"card": "Energy Bot",
 			"count": 1
+		},
+		"Explodey": {
+			"type": "single",
+			"card": "Explode Bot",
+			"count": 1
 		}
 	},
-	"starting_energy_max": 2
+	"starting_energy_max": 2,
+	"starting_bones": 1
 }
